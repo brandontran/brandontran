@@ -1,0 +1,242 @@
+html, body { margin: 0; padding: 0; }
+body {
+  color: #777777;
+  font-family: 'Century Gothic', 'GillSans', 'Arial';
+  font-size: 1.4em;
+  padding-top: 70px;
+}
+body.index { 
+    padding-top: 0;
+}
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  line-height: 70px;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: top;
+  z-index: 5;
+  box-shadow: 0 0 30px rgba(0,0,0,.2);
+  overflow: hidden;
+}
+.logo {
+  text-decoration: none;
+  color: #777777;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.icon-home {
+  background-image: url('/icon-home.png');
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center center;
+  width: 70px;
+  height: 70px;
+  vertical-align: top;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.icon-home {
+  background-image: url('/icon-home.png');
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0;
+}
+
+/* ICON TRANSITIONS */
+.icon-home,
+.logo {
+  transition: transform 300ms;
+}
+
+.icon-home:hover,
+.logo:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+/* BACKDROP HERO only on home page */
+#backdrop {
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+#backdrop h2 {
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 28vh;
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.home .main {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    margin-top: 65vh;
+}
+
+section {
+    margin: 5%;
+    padding: 5%;
+}
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+
+/* Forms */
+input[type="text"] {
+  padding: 8px;
+  font-size: 1em;
+}
+
+
+
+/* LISTS */
+li { margin-bottom: 12px; }
+
+
+a, .icon-search {
+  opacity: 1;
+}
+a:hover,
+.icon-search:hover {
+  opacity: .7;
+}
+
+
+/* Link Colors */
+a {
+  color: #337ab7;
+}
+a:hover {
+  color: #5bc0de;
+}
+a:visted {
+  color: #326270;
+}
+
+
+/* Articles */
+#youtube_iframe {
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    border: none;
+}
+h1, h2 {
+    text-align: center;
+    font-weight: normal;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Image GALLERY */
+.gallery {
+	font-size: 0;
+	text-align: left;
+	margin-left: -8px;
+    margin-right: -8px;
+}
+.gallery img {
+	width: 25%;
+	vertical-align: top;
+    padding: 8px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    transition: transform 200ms;
+}
+.gallery img:hover {
+	transform: scale(1.1);
+    z-index: 2;
+}
+
+
+
+
+
+
+.gradient, 
+section {
+  background-color: #f1f1f1;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(232,232,232,1))); /* safari4+,chrome */
+  background:-webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 100%); /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 100%); /* ie10+ */
+  background:radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 100%); /* w3c */
+}
+.home section {
+  background: #fff;
+}
+  
+  
+  
+/* MOBILE */
+@media all and (max-width:700px){
+   body {
+     padding-top: 60px;
+     font-size: 1.2em;
+   }
+  .icon-home {
+    width: 60px;
+    height: 60px;
+  }
+  nav {
+    height: 60px;
+    line-height: 60px;
+  }
+  #youtube_iframe {
+    height: 300px;
+  }
+  .gallery img {
+	width: 33.333%;
+  }
+  
+}
+
+/* Tablet */
+@media all and (min-width: 701px) and (max-width: 1400px) {
+   body {
+     font-size: 1.3em;
+   }
+}
+
+
+@media print {
+	body {
+		width:100%
+	}
+	*{
+		-webkit-print-color-adjust:exact
+	}
+}
