@@ -5,7 +5,7 @@ body {
   font-size: 1.4em;
   padding-top: 70px;
 }
-body.index { 
+body.index {
     padding-top: 0;
 }
 
@@ -64,6 +64,11 @@ nav {
 
 
 
+/* HERO */
+.hero img {
+  display: block;
+  width: 100%;
+}
 
 /* BACKDROP HERO only on home page */
 #backdrop {
@@ -185,7 +190,7 @@ h1, h2 {
 
 
 
-.gradient, 
+.gradient,
 section {
   background-color: #f1f1f1;
   background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 100%); /* ff3.6+ */
@@ -198,9 +203,9 @@ section {
 .home section {
   background: #fff;
 }
-  
-  
-  
+
+
+
 /* MOBILE */
 @media all and (max-width:700px){
    body {
@@ -221,7 +226,7 @@ section {
   .gallery img {
 	width: 33.333%;
   }
-  
+
 }
 
 /* Tablet */

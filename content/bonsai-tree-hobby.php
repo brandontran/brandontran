@@ -1,9 +1,9 @@
 <?php
 $module = "html";
-$title = "Bonsai Tree Hobby";
+$title = "My Bonsai Tree Hobby";
 $description = "Having fun with a new hobby, cultivating and styling bonsai trees.";
 $body = "
-  <p><img src='/images/bonsai-tree-hobby.jpg'></p>
+  <p class='hero'><img src='/images/bonsai-tree-hobby.jpg'></p>
 
   <p>
     Early this year, 2018, I became facinated with Bonsai trees. I've been working on the backyard garden and then while pruning some of my favorite trees, Forest Whitebud and Oklahoma Redbud, I thought of trying to shape them for fun. I ended up watching a couple of youtube videos about Bonsai trees and it seemed easy enough. I then watched another 20+ videos and got the Bonsai bug.
